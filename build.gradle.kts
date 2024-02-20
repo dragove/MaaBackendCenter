@@ -12,6 +12,7 @@ plugins {
 
     kotlin("jvm") version "1.9.22"
     kotlin("plugin.spring") version "1.9.22"
+    kotlin("plugin.serialization") version "1.9.22"
     kotlin("kapt") version "1.9.22"
 }
 
@@ -52,6 +53,7 @@ dependencies {
     kapt("com.github.therapi:therapi-runtime-javadoc-scribe:0.15.0")
 
     // kotlin
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.3")
     implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core")
